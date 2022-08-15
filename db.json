@@ -1,13 +1,18 @@
 {
-  "producto": [{}],
+  "producto": [
+    {}
+  ],
   "usuario": [
     {
-      "nombre": "Pepe",
-      "telefono": "666666666",
-      "email": "Algolia@Algolia.com",
-      "password": "123456",
-      "direccion": "Calle de la calle",
-      "id": "1"
+      "id": "bbb44fc6-7372-47cd-bfcd-95be7379729f",
+      "nombre": "Admin",
+      "email": "admin@admin.com",
+      "password": "Admin1234",
+      "nacimiento": "2001-01-01",
+      "telefono": "1133445566",
+      "direccion": "Calle Falsa 123",
+      "ciudad": "Capital Federal",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
     }
   ]
 }

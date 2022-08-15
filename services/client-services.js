@@ -1,19 +1,22 @@
 const listaUsuarios = () =>
   fetch("http://localhost:3000/usuario").then((response) => response.json());
 
-const crearUsuario = (nombre, telefono, direccion, email, password) => {
+const crearUsuario = (usuario) => {
   return fetch("http://localhost:3000/usuario", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      nombre,
-      telefono,
-      direccion,
-      email,
-      password,
       id: uuid.v4(),
+      nombre: usuario.nombre,
+      email: usuario.email,
+      password: usuario.password,
+      nacimiento: usuario.nacimiento,
+      telefono: usuario.telefono,
+      direccion: usuario.direccion,
+      ciudad: usuario.ciudad,
+      provincia: usuario.provincia,
     }),
   });
 };
@@ -26,10 +29,13 @@ const detalleUsuario = async (id) => {
 const actualizarUsuario = async (
   id,
   nombre,
+  email,
+  password,
+  nacimiento,
   telefono,
   direccion,
-  email,
-  password
+  ciudad,
+  provincia
 ) => {
   try {
     const response = await fetch(`http://localhost:3000/usuario/${id}`, {
@@ -39,10 +45,13 @@ const actualizarUsuario = async (
       },
       body: JSON.stringify({
         nombre,
-        telefono,
-        direccion,
         email,
         password,
+        nacimiento,
+        telefono,
+        direccion,
+        ciudad,
+        provincia,
       }),
     });
     return await response.json();
