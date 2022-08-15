@@ -1,5 +1,13 @@
 {
-  "categoria": [{}],
   "producto": [{}],
-  "usuario": [{}]
+  "usuario": [
+    {
+      "nombre": "Pepe",
+      "telefono": "666666666",
+      "email": "Algolia@Algolia.com",
+      "password": "123456",
+      "direccion": "Calle de la calle",
+      "id": "1"
+    }
+  ]
 }
