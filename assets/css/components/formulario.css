@@ -1,28 +1,27 @@
-
 .formulario {
-    display: flex;
-    flex-direction: column;
-     margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
 }
 
 .form__title {
-    display: flex;
-    font-size: 1.3rem;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+  display: flex;
+  font-size: 1.3rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-    .form__login {
-        width: 50%;
-        margin: 0.5rem;
-        font-size: 1rem;
-    }
-   .form__container {
-        width: 100%;
-        margin: 0 0.5rem;
-    }
+.form__login {
+  width: 50%;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.form__container {
+  width: 100%;
+  margin: 0 0.5rem;
+}
 .form__label {
   font-size: var(--font-size-form-fieldset);
   margin-bottom: 1rem;
@@ -96,48 +95,104 @@
   padding-left: 0.5rem;
 }
 
-@media (min-width: 320px) and (max-width: 767px){
-     .form__title {
-        display: flex;
-        font-size: 1.3rem;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start
-    }
-
-    .form__login {
-        width: 50%;
-        margin: 0.5rem;
-        font-size: 1rem;
-    }
-   .form__container {
-        width: 100%;
-        margin: 0 0.5rem;
-    }
-
+.textarea {
+  box-sizing: border-box;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 7px;
+  width: 100%;
+  min-height: 3rem;
 }
-@media (min-width: 768px) and (max-width:1200px){
-    
-    .form__title {
-        display: flex;
-        font-size: 1.3rem;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start
-    }
 
-    .form__login {
-        width: 50%;
-        margin: 0.5rem;
-        font-size: 1rem;
-    }
+.textarea-container {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: var(--font-weigth-input);
+}
 
-    
+.textarea::placeholder {
+  visibility: hidden;
+}
 
+.textarea:focus {
+  outline: none;
+}
 
-    .form__container {
-        width: 100%;
-        margin: 0 0.5rem;
-    }
+.textarea-label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+  transition: all 0.25s;
+}
 
+.textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {
+  font-size: 0.875rem;
+  top: -1.25rem;
+  transition: all 0.25s;
+}
+
+.textarea-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea {
+  border: 1px solid var(--warning-color);
+}
+
+.textarea-container--invalid .textarea-label {
+  color: var(--warning-color);
+}
+
+.textarea-mensagem-erro {
+  display: none;
+}
+
+.textarea-container--invalid .textarea-mensagem-erro {
+  display: block;
+  color: var(--warning-color);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .form__title {
+    display: flex;
+    font-size: 1.3rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form__login {
+    width: 50%;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .form__container {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .form__title {
+    display: flex;
+    font-size: 1.3rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form__login {
+    width: 50%;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .form__container {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
 }

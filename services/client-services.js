@@ -26,17 +26,7 @@ const detalleUsuario = async (id) => {
   return await response.json();
 };
 
-const actualizarUsuario = async (
-  id,
-  nombre,
-  email,
-  password,
-  nacimiento,
-  telefono,
-  direccion,
-  ciudad,
-  provincia
-) => {
+const actualizarUsuario = async (id) => {
   try {
     const response = await fetch(`http://localhost:3000/usuario/${id}`, {
       method: "PUT",
@@ -44,14 +34,14 @@ const actualizarUsuario = async (
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        nombre,
-        email,
-        password,
-        nacimiento,
-        telefono,
-        direccion,
-        ciudad,
-        provincia,
+        nombre: usuario.nombre,
+        email: usuario.email,
+        password: usuario.password,
+        nacimiento: usuario.nacimiento,
+        telefono: usuario.telefono,
+        direccion: usuario.direccion,
+        ciudad: usuario.ciudad,
+        provincia: usuario.provincia,
       }),
     });
     return await response.json();
