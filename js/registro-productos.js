@@ -1,5 +1,6 @@
 import { valida } from "./validaciones-registro-productos.js";
 import { productServices } from "../services/products-services.js";
+import Swal from "sweetalert2";
 
 const inputs = document.querySelectorAll("input");
 
@@ -22,4 +23,11 @@ registroSubmit.addEventListener("submit", (e) => {
     descripcion: formData.get("descripcion"),
   };
   productServices.crearProducto(producto);
+  Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Producto registrado con éxito",
+    showConfirmButton: true,
+    timer: 1500,
+  });
 });

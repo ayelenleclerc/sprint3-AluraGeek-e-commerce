@@ -95,6 +95,54 @@
       "nombre": "Juego Portatil",
       "precio": "$60.00",
       "descripcion": "Juego Portatil al estilo Nintendo con 3 cartuchos de juegos a elección."
+    },
+    {
+      "id": "23724b06-bea4-43c7-b49e-1bdf61bbe5b7",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos1_id9ixl.jpg",
+      "categoria": "Diversos",
+      "nombre": "Camisa Atari",
+      "precio": "$60.00",
+      "descripcion": "Camisa Atari original. Varios talles"
+    },
+    {
+      "id": "92e2c88e-db96-4183-92b5-fa1d6458c0e4",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos2_apbwvi.jpg",
+      "categoria": "Diversos",
+      "nombre": "Camisa SNES",
+      "precio": "$60.00",
+      "descripcion": "Camisa SNES Original. Varios talles. Decada de los ´90"
+    },
+    {
+      "id": "9f1c141d-a49c-4926-a940-9b13d5eb2748",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos3_kj8bby.jpg",
+      "categoria": "Diversos",
+      "nombre": "Muñeco Sonic",
+      "precio": "$60.00",
+      "descripcion": "Muñecos originales de Sonic. Vintage Collection"
+    },
+    {
+      "id": "f88163f4-7339-46cb-9a48-081e74b2e4be",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos4_dia9z8.jpg",
+      "categoria": "Diversos",
+      "nombre": "Radio Vintage",
+      "precio": "$60.00",
+      "descripcion": "Radio-despertador Vintage con radio AM y FM "
+    },
+    {
+      "id": "bac51961-72e7-4c57-a6ab-e18afb2cc5fd",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos5_h7bs7l.jpg",
+      "categoria": "Diversos",
+      "nombre": "Lentes 3D",
+      "precio": "$60.00",
+      "descripcion": "Lentes 3D para simulación de Realidad Virtual"
+    },
+    {
+      "id": "79de5dd3-b6da-4e11-9e3b-3fe0c25ef996",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225014/Alura-E-Commerce/diversos6_u74lqo.jpg",
+      "categoria": "Diversos",
+      "nombre": "Pikachu",
+      "precio": "$60.00",
+      "descripcion": "Muñeco de peluche de Pikachu"
     }
   ],
   "usuario": [
@@ -107,6 +155,28 @@
       "telefono": "1133445566",
       "direccion": "Calle Falsa 123",
       "ciudad": "Capital Federal",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+      "id": "0efaefad-05f8-4d0a-8167-1df8511d6c8d",
+      "nombre": "Ayelen Tatiana Leclerc",
+      "email": "ayelenleclerc@gmail.com",
+      "password": "Admin1234",
+      "nacimiento": "1982-07-06",
+      "telefono": "1133749360",
+      "direccion": "Carhue 583",
+      "ciudad": "Liniers",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+      "id": "bcb2d9c0-4df4-452d-a233-6744b25e909d",
+      "nombre": "Christian Bescos",
+      "email": "christian_2011@hotmail.com.ar",
+      "password": "Kiara1307",
+      "nacimiento": "1973-10-15",
+      "telefono": "1153039115",
+      "direccion": "Carhue 583",
+      "ciudad": "Liniers",
       "provincia": "Ciudad Autónoma de Buenos Aires"
     }
   ]

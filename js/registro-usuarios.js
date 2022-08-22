@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { valida } from "./validaciones-registro-usuarios.js";
 import { clientServices } from "../services/client-services.js";
 
@@ -24,5 +25,25 @@ registroSubmit.addEventListener("submit", (e) => {
     ciudad: formData.get("ciudad"),
     provincia: formData.get("provincia"),
   };
-  clientServices.crearUsuario(usuario);
+  clientServices.listaUsuarios().then((usuarios) => {
+    const usuarioEnLista = usuarios.find(
+      (usuario) => usuario.email === formData.get("email")
+    );
+    if (usuarioEnLista) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El email ya está registrado!",
+        footer: `<a href="../pages/homeLogin.html">¿Ya tienes una cuenta? Inicia sesión</a>`,
+      });
+    } else {
+      clientServices.crearUsuario(usuario);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Usuario registrado con éxito",
+        footer: `<a href="../pages/homeLogin.html">Inicia sesión</a>`,
+      });
+    }
+  });
 });

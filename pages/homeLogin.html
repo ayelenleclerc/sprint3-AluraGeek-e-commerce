@@ -45,7 +45,7 @@
     </header>
     <main class="main main-heigth">
         <div class="search-find hidden" data-find></div>
-        <div class="form__title form__login">
+        <div class="form__title ">
             <h3>Iniciar sesión</h3>
         </div>
         <div class="form__container">
@@ -92,7 +92,7 @@
             </div>
             <div class="footer__social">
                 <h2 class="contacto__title">Hable con nosotros</h2>
-                <form action="#" class="formulario">
+                <form action="#" class="formulario footer-form" data-form-footer>
                     <div class="input-container">
                         <input name="name" id="nombre" class="input" type="text" placeholder="Nombre" required
                             data-tipo="nombre">
@@ -115,7 +115,8 @@
             </p>
         </div>
     </footer>
-    <script type="module" src="../controllers/search-controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="../js/login.js"></script>
 </body>
 
 </html>
