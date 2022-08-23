@@ -17,15 +17,27 @@ const nuevoProducto = (nombre, img, precio) => {
   return card;
 };
 
-const productos = document.querySelector("[datos-productos]");
+const starwars = document.querySelector("[data-section-starwars]");
+const consolas = document.querySelector("[data-section-consolas]");
+const diversos = document.querySelector("[data-section-diversos]");
 
 const render = async () => {
   try {
     const listaProductos = await productServices.listaProductos();
     listaProductos.forEach((elemento) => {
-      productos.appendChild(
-        nuevoProducto(elemento.nombre, elemento.img, elemento.precio)
-      );
+      if (elemento.categoria === "Star Wars") {
+        starwars.appendChild(
+          nuevoProducto(elemento.nombre, elemento.img, elemento.precio)
+        );
+      } else if (elemento.categoria === "Consolas") {
+        consolas.appendChild(
+          nuevoProducto(elemento.nombre, elemento.img, elemento.precio)
+        );
+      } else if (elemento.categoria === "Diversos") {
+        diversos.appendChild(
+          nuevoProducto(elemento.nombre, elemento.img, elemento.precio)
+        );
+      }
     });
   } catch (error) {
     console.log(error);

@@ -156,6 +156,8 @@
 
   .btn__agregar--a {
     font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .btn__agregar--a:visited {
