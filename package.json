@@ -2,9 +2,10 @@
   "name": "sprint3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,12 @@
   "bugs": {
     "url": "https://github.com/ayelenleclerc/sprint3-AluraGeek-e-commerce/issues"
   },
-  "homepage": "https://github.com/ayelenleclerc/sprint3-AluraGeek-e-commerce#readme",
+  "homepage": "https://github.com/ayelenleclerc/sprint3-AluraGeek-e-commerce/index.html",
   "dependencies": {
     "json-server": "^0.17.0",
     "sweetalert2": "^11.4.26"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
